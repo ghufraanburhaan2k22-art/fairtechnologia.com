@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FairTechnologia – AI & Photoshop Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e5e7eb;
+    }
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15,23,42,0.9);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 { margin: 0; color: #38bdf8; }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e293b, transparent);
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { max-width: 700px; margin: auto; color: #cbd5f5; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .card h3 { color: #38bdf8; }
+
+    .tutorial-page {
+      background: #020617;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .auth {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+    .auth-box {
+      background: #020617;
+      padding: 25px;
+      border-radius: 14px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #38bdf8;
+      color: #020617;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #0ea5e9; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FairTechnologia</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#login">Login</a>
+    <a href="#signup">Sign Up</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Learn AI Tools, Photoshop & Modern Tech</h2>
+  <p>FairTechnologia.com provides clean, written tutorials with images to help you master AI tools, Photoshop, and useful web technologies.</p>
+</section>
+
+<section class="container" id="tutorials">
+  <h2>Popular Tutorials</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI tools">
+      <h3>Getting Started with AI Tools</h3>
+      <p>Learn how to use AI tools for writing, image generation, and productivity.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28" alt="Photoshop">
+      <h3>Photoshop Basics</h3>
+      <p>Understand layers, tools, and editing workflows in Adobe Photoshop.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Web tools">
+      <h3>Useful Web Tools</h3>
+      <p>Best websites and tools for designers, students, and creators.</p>
+    </div>
+  </div>
+
+  <div class="tutorial-page">
+    <h2>Example Tutorial Page</h2>
+    <p>This is a written tutorial page. You can add step-by-step guides here.</p>
+    <p><strong>Step 1:</strong> Open the AI tool website.</p>
+    <p><strong>Step 2:</strong> Upload your image or enter text.</p>
+    <p><strong>Step 3:</strong> Adjust settings and download the result.</p>
+    <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec" style="width:100%;border-radius:12px;margin-top:15px;">
+  </div>
+</section>
+
+<section class="container auth" id="login">
+  <div class="auth-box">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+  </div>
+
+  <div class="auth-box" id="signup">
+    <h2>Sign Up</h2>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Create Account</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FairTechnologia.com | Learn Smart, Learn Fast</p>
+</footer>
+
+</body>
+</html>
